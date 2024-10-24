@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ModaShop</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="cabeçalho">
+    <div class="container">
+      <input type="checkbox" id="menu" class="container__botao">
+      <label for="menu">
+        <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+      </label>
+      <ul class="lista-menu">
+        <li class="lista-menu__titulo">Categorias</li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Camisetas</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Calças</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Casacos</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Acessórios</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Calçados</a>
+        </li>
+      </ul>
+      <img src="img/Logo.svg" alt="Logo da ModaShop" class="container__imagem logo">
+    </div>
+    <div class="container">
+      <a href="#"><img src="img/Favoritos.svg" alt="Meus favoritos" class="container__imagem"></a>
+      <a href="#"><img src="img/Compras.svg" alt="Carrinho de compras" class="container__imagem"></a>
+      <a href="#"><img src="img/Usuario.svg" alt="Meu perfil" class="container__imagem"></a>
+    </div>
+  </header>
+
+  <section class="banner">
+    <h2 class="banner__titulo">Encontre seu estilo perfeito!</h2>
+    <p class="banner__texto">Roupas modernas e confortáveis para todas as ocasiões.</p>
+    <input type="search" class="banner__pesquisa" placeholder="O que você está procurando?">
+  </section>
+
+  <section class="carrossel">
+    <h2 class="carrossel__titulo">Novidades da estação</h2>
+    <!-- Slider main container -->
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="img/camiseta_nova.svg" alt="Nova camiseta da coleção"></div>
+        <div class="swiper-slide"><img src="img/casaco_novo.svg" alt="Novo casaco estiloso"></div>
+        <div class="swiper-slide"><img src="img/calca_nova.svg" alt="Nova calça confortável"></div>
+        <div class="swiper-slide"><img src="img/acessorio_novo.svg" alt="Acessórios modernos" /></div>
+        <div class="swiper-slide"><img src="img/calcado_novo.svg" alt="Calçados da estação" /></div>
+      </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+    <div class="card">
+      <div class="card__descrição">
+        <div class="descrição">
+          <h3 class="descrição__titulo">Talvez você também goste de...</h3>
+          <h2 class="descrição__titulo-produto">Jaqueta de Couro</h2>
+          <p class="descrição__texto">Estilo e conforto em uma peça única para seu guarda-roupa.</p>
+        </div>
+        <img src="img/jaqueta.svg" class="descrição__imagem" />
+      </div>
+      <div class="card__botões">
+        <ul class="botões">
+          <li class="botões__item">
+            <img src="img/Favoritos.svg" alt="Favoritar produto" />
+          </li>
+          <li class="botões__item">
+            <img src="img/Compras.svg" alt="Adicionar no carrinho de compras" />
+          </li>
+        </ul>
+        <a href="#" class="botões__ancora">Saiba mais</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="carrossel">
+    <h2 class="carrossel__titulo">Mais vendidos</h2>
+    <div class="swiper">
+      <div class="swiper-pagination"></div>
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="img/camiseta_vendida.svg" alt="Camiseta mais vendida"></div>
+        <div class="swiper-slide"><img src="img/casaco_vendido.svg" alt="Casaco mais vendido"></div>
+        <div class="swiper-slide"><img src="img/calca_vendida.svg" alt="Calça mais vendida"></div>
+        <div class="swiper-slide"><img src="img/calcado_vendido.svg" alt="Calçado mais vendido"></div>
+      </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+    <div class="card">
+      <div class="card__descrição">
+        <div class="descrição">
+          <img src="img/Estrelinhas.svg" alt="Avaliação 5 estrelas">
+          <h3 class="descrição__titulo">Estilista do Mês</h3>
+          <h2 class="descrição__titulo-produto">Ana Monteiro</h2>
+          <p class="descrição__texto">Designer de moda especializada em roupas casuais e elegantes.</p>
+        </div>
+        <img src="img/estilista.svg" class="descrição__imagem">
+      </div>
+      <div class="card__botões">
+        <ul class="botões">
+          <li class="botões__item"><img src="img/Favoritos.svg" alt="Favoritar produto"></li>
+          <li class="botões__item"><img src="img/Compras.svg" alt="Adicionar no carrinho de compras"></li>
+        </ul>
+        <a href="#" class="botões__ancora">Saiba mais</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="tópicos">
+    <h2 class="tópicos__titulo">CATEGORIAS MAIS VISTAS</h2>
+    <ul class="tópicos__lista">
+      <li class="tópicos__item"><a href="#" class="tópicos__link">Moda Masculina</a></li>
+      <li class="tópicos__item"><a href="#" class="tópicos__link">Moda Feminina</a></li>
+      <li class="tópicos__item"><a href="#" class="tópicos__link">Roupas Casuais</a></li>
+      <li class="tópicos__item"><a href="#" class="tópicos__link">Moda Fitness</a></li>
+      <li class="tópicos__item"><a href="#" class="tópicos__link">Acessórios</a></li>
+      <li class="tópicos__item"><a href="#" class="tópicos__link">Calçados</a></li>
+    </ul>
+  </section>
+
+  <section class="contato">
+    <h2 class="contato__titulo">Entre em contato</h2>
+    <p class="contato__texto">Dúvidas? Estamos aqui para ajudar. Fale conosco pelo chat ou mande um e-mail!</p>
+  </section>
+</body>
+
+</html>
